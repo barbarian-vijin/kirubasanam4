@@ -32,41 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private Button videos;
     private Button Bible;
     private Button Books;
-    public EditText name;
-    public Button query_button;
-    public TextView result_address;
+
 
     @Override
     //main activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //database
-        name = findViewById(R.id.name);
-        query_button = findViewById(R.id.query_button);
-        result_address=findViewById(R.id.result);
-
-        //now setting onclicklistener to query button
-        query_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //create the instance of database and open database connection
-                DatabaseAcess databaseAcess = DatabaseAcess.getInstance(getApplicationContext());
-                databaseAcess.open();
-
-                //getting string value from edittext
-                String n = name.getText().toString();
-                String address = databaseAcess.getAdress(n);//used the get address method  to get adress
-
-                //setting result to result field
-                result_address.setText(address);
-                databaseAcess.close();
-                //datbaseconnection closed
-
-            }
-        });
-
         init();
         videos = findViewById(R.id.btnsundayschoolvideos);
         videos.setOnClickListener(new View.OnClickListener() {
