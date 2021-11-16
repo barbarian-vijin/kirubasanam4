@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
     private Button Bible;
     private Button Books;
 
-
     @Override
     //main activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         init();
         videos = findViewById(R.id.btnsundayschoolvideos);
         videos.setOnClickListener(new View.OnClickListener() {
