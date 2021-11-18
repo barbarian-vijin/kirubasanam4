@@ -5,18 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 import com.viewpagerindicator.CirclePageIndicator;
 
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -33,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
     private Button Bible;
     private Button Books;
 
-
     @Override
     //main activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         init();
         videos = findViewById(R.id.btnsundayschoolvideos);
         videos.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 opensundayschoolbook();
             }
         });
+
+
     }
             //image slider
             private void init() {

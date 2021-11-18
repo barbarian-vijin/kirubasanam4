@@ -13,6 +13,8 @@ public class bibletypepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bibletypepage);
+        getSupportActionBar().setTitle("Select Your Bible");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         englishBible = findViewById(R.id.btnEnglishbible);
         englishBible.setOnClickListener(new View.OnClickListener() {
             @Override
