@@ -10,7 +10,7 @@ public class sundaclassbook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sundaclassbook);
-        getSupportActionBar().setTitle("Sunday School Book");
+        getSupportActionBar().setTitle("Select Your Class");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

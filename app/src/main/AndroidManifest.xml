@@ -14,9 +14,6 @@
         android:theme="@style/Theme.Kirubasanam">
 
         <activity
-            android:name=".eventPage"
-            android:exported="false" />
-        <activity
             android:name=".Englishbible"
             android:exported="false"
             android:parentActivityName=".bibletypepage" />

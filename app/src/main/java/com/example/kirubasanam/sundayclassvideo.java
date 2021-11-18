@@ -13,6 +13,8 @@ public class sundayclassvideo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sundayclassvideo);
+        getSupportActionBar().setTitle("Select Your Class");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         videoslkg = findViewById(R.id.btnlkg);
         videoslkg.setOnClickListener(new View.OnClickListener() {
