@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private Button videos;
     private Button Bible;
     private Button Books;
+    private Button Prayforus;
 
     @Override
     //main activity
@@ -64,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 opensundayschoolbook();
+            }
+        });
+        Prayforus =findViewById(R.id.btnprayforus);
+        Prayforus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openprayforus();
             }
         });
 
@@ -142,6 +150,12 @@ public class MainActivity extends AppCompatActivity {
             public void opensundayschoolbook(){
           Intent intent = new Intent(this,sundaclassbook.class);
           startActivity(intent);
+            }
+
+            //opening prayfor us
+            public void openprayforus(){
+        Intent intent = new Intent(this,prayForUs.class);
+        startActivity(intent);
             }
 
         }
