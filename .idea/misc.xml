@@ -4,7 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/background1.xml" value="0.26205128205128203" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/border.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/gradient_btn.xml" value="0.2703125" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14270833333333333" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/iconhomepage.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/iconprofile.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/selector.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/transparent_bg_bordered.xml" value="0.2703125" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_biblepage.xml" value="0.25" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_bibletypepage.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_copy.xml" value="0.25416666666666665" />
@@ -12,18 +18,25 @@
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_event_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_lkgvideos.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_notification.xml" value="0.25" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_notificaton.xml" value="0.25" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_pray_for_us.xml" value="0.2" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sundaclassbook.xml" value="0.176" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sunday_school_videos.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sundayclassvideo.xml" value="0.176" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sundayclassvideos.xml" value="0.1421875" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sundayschoolvideos.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_youtubeplayer.xml" value="0.2520833333333333" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/bottom_navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/navigation_items.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/recorditem.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/row.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/searchbutton.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/slidingimagelayout.xml" value="0.13020833333333334" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/transparent_bg_bordered.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/menu/menu_navigation.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26205128205128203" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/xml/bg1.xml" value="0.25416666666666665" />

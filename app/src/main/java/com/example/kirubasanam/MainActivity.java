@@ -4,18 +4,21 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
@@ -45,6 +48,45 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //this is for hide the action bar
+        View decorView = getWindow().getDecorView();
+      // Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+      // Remember that you should never show the action bar if the
+      // status bar is hidden, so hide that too if necessary.
+        ActionBar actionBar = getActionBar();
+        actionBar.hide();
+
+        //this is for bottomnavigation
+        //initialize and assign value
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        //set home selected
+        bottomNavigationView.findViewById(R.id.home);
+
+        //preform ItemSelected Listener
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.home:
+                        return true;
+                    case R.id.Notifications:
+                        startActivity(new Intent(getApplicationContext(),
+                                notification.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Profile:
+                        startActivity(new Intent(getApplicationContext(),
+                                profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        }) ;
         init();
         videos = findViewById(R.id.btnsundayschoolvideos);
         videos.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
             //image slider
+
+
             private void init() {
                 mPager = (ViewPager) findViewById(R.id.pager);
                 mPager.setAdapter(new SlidingImage_Adapter(MainActivity.this, urls));
@@ -133,8 +177,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
             }
-
-
             // opening sunday school
             public void openSundayschoolvideos() {
                 Intent intent = new Intent(this, sundayclassvideo.class);
@@ -148,15 +190,14 @@ public class MainActivity extends AppCompatActivity {
 
             // opening books
             public void opensundayschoolbook(){
-          Intent intent = new Intent(this,sundaclassbook.class);
-          startActivity(intent);
+                Intent intent = new Intent(this,sundaclassbook.class);
+                 startActivity(intent);
             }
 
             //opening prayfor us
             public void openprayforus(){
-        Intent intent = new Intent(this,prayForUs.class);
-        startActivity(intent);
+                 Intent intent = new Intent(this,prayForUs.class);
+                 startActivity(intent);
             }
 
-        }
-
+    }

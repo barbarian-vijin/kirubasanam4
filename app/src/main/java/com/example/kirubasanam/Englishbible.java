@@ -1,11 +1,8 @@
 package com.example.kirubasanam;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Englishbible extends AppCompatActivity {
 
@@ -15,6 +12,5 @@ public class Englishbible extends AppCompatActivity {
         setContentView(R.layout.activity_englishbible);
         getSupportActionBar().setTitle("English Bible");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 }
