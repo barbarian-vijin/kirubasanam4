@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String[] urls = new String[] {"https://www.linkpicture.com/q/wallpaperuse.com-tamil-bible-verses-wallpapers-597005.jpg", "https://demonuts.com/Demonuts/SampleImages/W-08.JPG", "https://demonuts.com/Demonuts/SampleImages/W-10.JPG",
             "https://demonuts.com/Demonuts/SampleImages/W-13.JPG", "https://demonuts.com/Demonuts/SampleImages/W-17.JPG", "https://demonuts.com/Demonuts/SampleImages/W-21.JPG"};
-
+    BottomNavigationView bottomNavigationView;
     private Button videos;
     private Button Bible;
     private Button Books;
@@ -45,6 +45,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        bottomNavigationView=findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId())
+                {
+                    case R.id.profile:
+                        startActivity(new Intent(getApplicationContext(),profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case  R.id.home:
+                        return  true;
+                    case R.id.notification:
+                        startActivity(new Intent(getApplicationContext(),notification.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+
+                return false;
+            }
+        });
+
+
         init();
         videos = findViewById(R.id.btnsundayschoolvideos);
         videos.setOnClickListener(new View.OnClickListener() {
