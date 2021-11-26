@@ -10,5 +10,7 @@ public class bibleactivitypage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bibleactivitypage);
+        getSupportActionBar().setTitle("Select Bible");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

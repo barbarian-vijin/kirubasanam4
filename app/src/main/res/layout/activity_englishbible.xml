@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Englishbible">
+    <include layout="@layout/activity_bottom_navigation"/>
 
     <ListView
         android:id="@+id/bookname"
