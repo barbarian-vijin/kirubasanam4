@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
             }
             //opening bible
             public void openbible() {
-                Intent intent = new Intent(this, bibletypepage.class);
+                Intent intent = new Intent(this, bibleactivitypage.class);
                 startActivity(intent);
             }
 
