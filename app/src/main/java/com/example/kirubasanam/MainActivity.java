@@ -46,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         bottomNavigationView=findViewById(R.id.bottom_navigator);
-        bottomNavigationView.setSelectedItemId(R.id.home);
+       // bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -55,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId())
                 {
                     case R.id.profile:
-                        startActivity(new Intent(getApplicationContext(),profile.class));
+                        startActivity(new Intent(getApplicationContext(),prayForUs.class));
                         overridePendingTransition(0,0);
                         return true;
                     case  R.id.home:
-                        return  true;
+                       return true;
                     case R.id.notification:
                         startActivity(new Intent(getApplicationContext(),notification.class));
                         overridePendingTransition(0,0);
