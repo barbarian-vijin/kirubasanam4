@@ -14,7 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
-        android:background="#05386B">
+        android:background="#e3e0cf">
 
     <RelativeLayout
         android:layout_width="fill_parent"

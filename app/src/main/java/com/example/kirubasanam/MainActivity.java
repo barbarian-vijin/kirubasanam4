@@ -19,9 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
+
 import com.viewpagerindicator.CirclePageIndicator;
 
 import java.io.IOException;
@@ -47,46 +45,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        //this is for hide the action bar
-        View decorView = getWindow().getDecorView();
-      // Hide the status bar.
-        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
-      // Remember that you should never show the action bar if the
-      // status bar is hidden, so hide that too if necessary.
-        ActionBar actionBar = getActionBar();
-        actionBar.hide();
-
-        //this is for bottomnavigation
-        //initialize and assign value
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-        //set home selected
-        bottomNavigationView.findViewById(R.id.home);
-
-        //preform ItemSelected Listener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-                    case R.id.home:
-                        return true;
-                    case R.id.Notifications:
-                        startActivity(new Intent(getApplicationContext(),
-                                notification.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.Profile:
-                        startActivity(new Intent(getApplicationContext(),
-                                profile.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                }
-                return false;
-            }
-        }) ;
         init();
         videos = findViewById(R.id.btnsundayschoolvideos);
         videos.setOnClickListener(new View.OnClickListener() {
