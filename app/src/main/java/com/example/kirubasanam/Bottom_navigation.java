@@ -15,8 +15,8 @@ public class Bottom_navigation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation);
-       bottomNavigationView=findViewById(R.id.bottom_navigator);
-    //    bottomNavigationView.setSelectedItemId(R.id.home);
+      /* bottomNavigationView=findViewById(R.id.bottom_navigator);
+      bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -37,7 +37,7 @@ public class Bottom_navigation extends AppCompatActivity {
 
                 return false;
             }
-        });
+        });*/
 
 
 

@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         bottomNavigationView=findViewById(R.id.bottom_navigator);
-       // bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case  R.id.home:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                        return true;
                     case R.id.notification:
                         startActivity(new Intent(getApplicationContext(),notification.class));
