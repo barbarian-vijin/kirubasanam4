@@ -10,8 +10,13 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="50dp"
+        android:background="#e3e0cf"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"

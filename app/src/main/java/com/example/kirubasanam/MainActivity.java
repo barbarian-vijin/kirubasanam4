@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case  R.id.home:
-                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
                        return true;
                     case R.id.notification:
                         startActivity(new Intent(getApplicationContext(),notification.class));

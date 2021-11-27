@@ -21,10 +21,8 @@ public class bibleactivitypage extends AppCompatActivity {
         getSupportActionBar().setTitle("Select Bible");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-
         bottomNavigationView=findViewById(R.id.bottom_navigator);
-       bottomNavigationView.setSelectedItemId(R.id.profile);
+        bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -55,9 +53,6 @@ public class bibleactivitypage extends AppCompatActivity {
                 openEnglishBible();
             }
         });
-
-
-
     }
     public  void openEnglishBible(){
         Intent intent = new Intent(this,Englishbible.class);
