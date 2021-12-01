@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kirubasanam" >
+    package="com.example.kirubasanam">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,11 +10,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Kirubasanam" >
+        android:theme="@style/Theme.Kirubasanam">
+        <activity
+            android:name=".activities.CreateNoteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".activities.notes"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".bibleactivitypage"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Bottom_navigation"
             android:exported="false" />

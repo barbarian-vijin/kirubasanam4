@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/backgroound_done_button.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/background_add_button.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/background_note.xml" value="0.2703125" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/background_search.xml" value="1.2392857142857143" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/background_subtitle_indicator.xml" value="0.2703125" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/border.xml" value="0.14322916666666666" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.14322916666666666" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.14322916666666666" />
@@ -13,16 +18,19 @@
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_bibleactivitypage.xml" value="0.2" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_bibletypepage.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.25" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_create_note.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_englishbible.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_lesson1.xml" value="0.23148148148148148" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_lesson1lkg.xml" value="0.21944444444444444" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_lkgvideos.xml" value="0.23148148148148148" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_main.xml" value="0.23148148148148148" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_notes.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_notification.xml" value="0.25" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sundaclassbook.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/activity_sundayclassvideo.xml" value="0.23148148148148148" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/bibletypepage.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kirubasanam4/app/src/main/res/layout/item_container_note.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/layout/slidingimagelayout.xml" value="0.25416666666666665" />
         <entry key="..\:/Kirubasanam4/app/src/main/res/menu/menu.xml" value="0.25" />
       </map>

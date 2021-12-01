@@ -20,7 +20,7 @@ public class Englishbible extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        //bottomnavigatin view
+        //bottomnavigation view
         bottomNavigationView=findViewById(R.id.bottom_navigator);
        // bottomNavigationView.setSelectedItemId(R.id.profile);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -46,7 +46,5 @@ public class Englishbible extends AppCompatActivity {
                 return false;
             }
         });
-
-
     }
 }

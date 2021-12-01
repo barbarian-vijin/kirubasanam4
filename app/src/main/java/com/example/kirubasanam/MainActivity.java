@@ -4,25 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.SQLException;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import com.viewpagerindicator.CirclePageIndicator;
 
-import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -39,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Bible;
     private Button Books;
     private Button Prayforus;
+    private  Button notes;
 
     @Override
     //main activity
@@ -99,6 +92,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openprayforus();
+            }
+        });
+        notes = findViewById(R.id.btnnotes);
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opennotespage();
             }
         });
 
@@ -184,5 +184,11 @@ public class MainActivity extends AppCompatActivity {
                  Intent intent = new Intent(this,prayForUs.class);
                  startActivity(intent);
             }
+
+            // opening notes page
+            public  void opennotespage(){
+                Intent intent = new Intent(this, com.example.kirubasanam.activities.notes.class);
+                startActivity(intent);
+                 }
 
     }
