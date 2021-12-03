@@ -18,8 +18,6 @@ public class Englishbible extends AppCompatActivity {
         setContentView(R.layout.activity_englishbible);
         getSupportActionBar().setTitle("English Bible");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
         //bottomnavigation view
         bottomNavigationView=findViewById(R.id.bottom_navigator);
        // bottomNavigationView.setSelectedItemId(R.id.profile);
